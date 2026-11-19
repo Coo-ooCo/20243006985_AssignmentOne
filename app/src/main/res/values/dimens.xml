@@ -3,4 +3,6 @@
 <resources>
     <dimen name="screen_padding">16dp</dimen>
     <dimen name="tile_padding">16dp</dimen>
+    <dimen name="header_gap">16dp</dimen>
+    <dimen name="content_gap">12dp</dimen>
 </resources>

@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Part F: detail screen opened from the main topic buttons -->
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
