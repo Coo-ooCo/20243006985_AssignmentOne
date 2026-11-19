@@ -12,6 +12,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+/**
+ * CampusLife - main screen of the University of Waikato companion app.
+ *
+ * Shows a welcome banner and four topic tiles (Facilities, Events, Clubs,
+ * Support). Tapping a tile opens DetailActivity with the matching content
+ * (Parts E-G); the topic index doubles as the unique identifier passed to
+ * the detail screen.
+ */
 public class MainActivity extends AppCompatActivity {
 
     // Resource ids of the four topic ImageButtons (order matches arrays.xml).
