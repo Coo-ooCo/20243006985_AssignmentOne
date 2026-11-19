@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Part B: Main screen (portrait).
+    Part B + C: Main screen (portrait).
 
     Responsive layout notes:
     - Weights are used instead of fixed sizes so the screen adapts to
       any device / screen density.
     - The only hard-coded text size is the banner title (40sp), which the
       specification explicitly allows.
+    - Each topic tile uses @drawable/btn_selector (Part C): green when
+      idle, light green while pressed.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -57,6 +59,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/btn_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -65,21 +68,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
                     android:contentDescription="@string/facilities"
-                    android:scaleType="fitCenter"
                     android:padding="@dimen/tile_padding"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_facilities" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/facilities" />
+                    android:paddingBottom="@dimen/tile_padding"
+                    android:text="@string/facilities"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/btn_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -88,15 +95,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
                     android:contentDescription="@string/events"
-                    android:scaleType="fitCenter"
                     android:padding="@dimen/tile_padding"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_events" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/events" />
+                    android:paddingBottom="@dimen/tile_padding"
+                    android:text="@string/events"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
 
@@ -110,6 +120,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/btn_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -118,21 +129,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
                     android:contentDescription="@string/clubs"
-                    android:scaleType="fitCenter"
                     android:padding="@dimen/tile_padding"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_clubs" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/clubs" />
+                    android:paddingBottom="@dimen/tile_padding"
+                    android:text="@string/clubs"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/btn_selector"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -141,15 +156,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
                     android:contentDescription="@string/support"
-                    android:scaleType="fitCenter"
                     android:padding="@dimen/tile_padding"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/img_btn_support" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/support" />
+                    android:paddingBottom="@dimen/tile_padding"
+                    android:text="@string/support"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
