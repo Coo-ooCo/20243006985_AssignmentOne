@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared spacing values, kept here so the layouts stay free of magic numbers. -->
+<resources>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="tile_padding">16dp</dimen>
+</resources>
