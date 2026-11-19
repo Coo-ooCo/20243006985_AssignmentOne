@@ -1,5 +1,6 @@
 package com.example.assignmentone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -51,10 +52,18 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Called when one of the four topic ImageButtons is clicked.
-     * Shows a Toast so the click can be verified while testing.
+     * Part E: shows a Toast so the click can be verified while testing.
+     * Part G: builds an explicit Intent that starts the DetailActivity and
+     * passes a unique identifier (the topic index) plus the topic name,
+     * which DetailActivity uses to work out which content to display.
      */
     private void onTopicClicked(int topicIndex, View view) {
         String topicName = view.getContentDescription().toString();
         Toast.makeText(this, topicName + " clicked", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(DetailActivity.EXTRA_TOPIC_INDEX, topicIndex);
+        intent.putExtra(DetailActivity.EXTRA_TOPIC_NAME, topicName);
+        startActivity(intent);
     }
 }
